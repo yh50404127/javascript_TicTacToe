@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>text</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="以恆">
+    <meta name="author" content="梁以恆">
+    <meta name="keywords" content="梁以恆, 井字遊戲, ooxx, ooxx遊戲">
+
+
+
+    <script type="text/javascript">
+
+        k = 1;
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            document.getElementById('go').addEventListener('click',
+                function () {
+
+                    var bt = document.getElementById('ia');
+                    bt.setAttribute('class', 'b');
+
+                    for (var i = 0; i < 9; i++) {
+                        var bta = document.getElementById('iaa' + i);
+                        bta.setAttribute('class', 'bb');
+                    }
+
+                }, false)
+
+            document.getElementById('re').addEventListener('click',
+                function () {
+
+                    var bt = document.getElementById('ia');
+                    bt.setAttribute('class', 'b');
+
+                    for (var i = 0; i < 9; i++) {
+                        var bta = document.getElementById('iaa' + i);
+                        bta.setAttribute('class', 'bb');
+                        document.getElementById('iaa' + i).textContent = '';
+                    }
+                }, false)
+
+
+            document.getElementById('iaa0').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa0').textContent = 'o';
+                        k = k + 1;
+                    } else {
+                        document.getElementById('iaa0').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+
+                }
+                , false)
+
+            document.getElementById('iaa1').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa1').textContent = 'o';
+                        k = k + 1;
+                    } else {
+                        document.getElementById('iaa1').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa2').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa2').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa2').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa3').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa3').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa3').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa4').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa4').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa4').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa5').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa5').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa5').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa6').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa6').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa6').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa7').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa7').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa7').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+                , false)
+
+            document.getElementById('iaa8').addEventListener('click',
+                function () {
+
+                    if (k == 1) {
+                        document.getElementById('iaa8').textContent = 'o';
+                        k = k + 1;
+
+                    } else {
+                        document.getElementById('iaa8').textContent = 'x';
+                        k = k - 1;
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa2').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa5').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'o' && document.getElementById('iaa7').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa3').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa7').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa5').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa8').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'o' && document.getElementById('iaa4').textContent == 'o' && document.getElementById('iaa6').textContent == 'o') {
+                        window.alert('oo 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa2').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa5').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa6').textContent == 'x' && document.getElementById('iaa7').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa3').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa1').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa7').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa5').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa0').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa8').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                    if (document.getElementById('iaa2').textContent == 'x' && document.getElementById('iaa4').textContent == 'x' && document.getElementById('iaa6').textContent == 'x') {
+                        window.alert('xx 勝利');
+                    }
+
+                }
+
+                , false)
+
+
+        }, false)
+
+    </script>
+
+    <style type:"text/css">
+        .resty {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 300px;
+            right: 200px
+        }
+
+        .gosty {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 300px;
+            left: 200px;
+        }
+
+        .b {
+            background-color: #f4f74a;
+            width: 700px;
+            height: 700px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bb {
+            background-color: #1ed3f3;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 150px;
+        }
+
+        .a {
+            background-color: #f4f74a;
+            width: 550px;
+            height: 500px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .aa {
+            background-color: #1ed3f3;
+            width: 150px;
+            height: 30px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:#999999" onload="load()">
+
+
+
+    <div class="a" id="ia">
+        <div class="aa" id="iaa0"></div>
+        <div class="aa" id="iaa1"></div>
+        <div class="aa" id="iaa2"></div>
+        <div class="aa" id="iaa3"></div>
+        <div class="aa" id="iaa4"></div>
+        <div class="aa" id="iaa5"></div>
+        <div class="aa" id="iaa6"></div>
+        <div class="aa" id="iaa7"></div>
+        <div class="aa" id="iaa8"></div>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="go.jpeg" id="go" style="flex:none; width: 10%; margin:10px 20px;">
+
+        <img src="re.jpeg" id="re" style="flex:none; width: 10%; margin:10px 20px;">
+    </div>
+
+    <h1 style="text-align: center; color: lightgreen;">按GO開始遊戲</h1>
+
+
+    <script type="text/javascript">
+
+
+
+
+    </script>
+    <script>
+        function load() {
+            // let disclaimer = document.getElementsByClassName('disclaimer')
+            // disclaimer[0].style.display = 'none'    
+        }
+    </script>
+</body>
+
+</html>
